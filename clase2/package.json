@@ -1,0 +1,15 @@
+{
+  "name": "ejercicio-resuelto-m02-c01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "zodiac-signs": "^1.1.0"
+  }
+}
