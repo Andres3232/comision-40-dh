@@ -1,0 +1,39 @@
+
+.div-padre {
+    background-color: blue;
+    width: 100%;
+    height: 200px;
+    padding: 10px 20px 30px 40px;
+}
+
+
+.div-hijo {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    padding: 5px;
+    visibility: hidden;
+}
+
+@media (min-width: 481px)  {
+    .div-padre {
+        background-color: green;
+    }
+
+    .div-hijo {
+        visibility: visible;
+    }
+}
+
+
+@media (min-width: 769px) {
+    .div-padre {
+        background-color: yellow;
+    }
+
+    .div-hijo {
+        visibility: hidden;
+    }
+
+}
