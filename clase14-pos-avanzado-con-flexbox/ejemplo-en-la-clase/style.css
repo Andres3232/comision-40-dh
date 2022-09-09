@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.div-padre {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
+}
+
+
+.div-hijo-1 {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    flex: 1;
+    align-self: flex-start;
+    align-items: center;
+}
+
+.div-hijo-2 {
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    flex: 1;
+
+}
+
+.div-hijo-3 {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    flex: 1;
+    align-self: flex-end;
+
+}
