@@ -1,0 +1,54 @@
+div{
+    width: 100px;
+    height: 100px;
+    transition: background-color 0.5s,width 0.5s,height 0.5s;
+}
+
+div:hover{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+}
+@keyframes animacion{
+    0%{
+        background-color: rgb(0, 255, 13);
+    }
+    50%{
+        background-color: blue;
+    }
+    100%{
+        background-color: rgb(0, 255, 213);
+    }
+}
+
+.e1{
+    background-color: red;
+    /* position: absolute; */
+    top: 50px;
+    left: 50px;
+    z-index: 10;
+
+
+}
+.e2{
+
+    background-color: yellow;
+    /* height: 100vh; */
+    /* position: absolute; */
+    top: 60px;
+    left: 60px;
+    z-index: 6;
+    animation: animacion 2s infinite;
+  
+
+}
+.e3{
+    background-color: blue;
+    /* height: 100vh; */
+    /* position: absolute; */
+    top: 70px;
+    left: 70px;
+    z-index: 3;
+    
+
+}
