@@ -18,7 +18,6 @@ const controller = {
 	// Detail - Detail from one product
 	detail: (req, res) => {
 		let id = req.params.id
-
 		let product = products.find(product => product.id == id)
 		res.render('detail', {
 			product,
@@ -33,31 +32,18 @@ const controller = {
 	
 	// Create -  Method to store
 	store: (req, res) => {
-
 		let image
+		console.log(req.files);
 		if(req.files[0] != undefined){
 			image = req.files[0].filename
 		} else {
 			image = 'default-image.png'
 		}
-
-		( req.files[0] != undefined ) ? image = req.files[0].filename : image = 'default-image.png'
-
 		let newProduct = {
 			id: products[products.length - 1].id + 1,
-			image: image,
 			...req.body,
+			image: image
 		};
-
-		// let newProduct = {
-		// 	id: products[products.length - 1].id + 1,
-		// 	image: 'default-image.png',
-		// 	name: req.body.name,
-		// 	price: req.body.price,
-		// 	discount: req.body.discount,
-		// 	category: req.body.category,
-		// 	description: req.body.description,
-		// }
 		products.push(newProduct)
 		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
 		res.redirect('/');
@@ -73,11 +59,18 @@ const controller = {
 	update: (req, res) => {
 		let id = req.params.id;
 		let productToEdit = products.find(product => product.id == id)
+		let image
+
+		if(req.files[0] != undefined){
+			image = req.files[0].filename
+		} else {
+			image = productToEdit.image
+		}
 
 		productToEdit = {
 			id: productToEdit.id,
 			...req.body,
-			image: productToEdit.image,
+			image: image,
 		};
 		
 		let newProducts = products.map(product => {

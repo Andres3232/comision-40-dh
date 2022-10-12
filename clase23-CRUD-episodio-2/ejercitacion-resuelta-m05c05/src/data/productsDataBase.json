@@ -1,10 +1,10 @@
 [
  {
   "id": 1,
-  "name": "",
-  "price": "",
-  "discount": "",
-  "category": "",
+  "name": "Cafetera Moulinex Dolce Gusto Edited",
+  "price": 100,
+  "discount": 50,
+  "category": "visited",
   "description": "Cafetera Dolce Gusto Lumio. La cafetera Dolce Gusto Lumio es de variedad automática que ha llegado con un diseño radical al que nos tenía acostumbrados Dolce Gusto.En este post te contamos todo lo que necesitas saber sobre ella, desde sus características técnicas hasta la calidad de las cápsulas o price.",
   "image": "img-cafetera-moulinex.jpg"
  },
@@ -73,12 +73,21 @@
  },
  {
   "id": 9,
-  "name": "",
-  "price": "",
-  "discount": "3",
-  "category": "visited",
+  "name": "Teclado Apple Magic Inalámbrico",
   "description": "El teclado mágico combina un diseño elegante con una batería recargable incorporada y funciones clave mejoradas. Con un mecanismo de tijera estable debajo de cada tecla, así como un recorrido de teclas optimizado y un perfil bajo, el Teclado Mágico ofrece una experiencia de escritura notablemente cómoda y precisa.",
-  "image": "img-apple-magic-keyboard.jpg"
+  "price": 11399,
+  "discount": 0,
+  "image": "img-apple-magic-keyboard.jpg",
+  "category": "visited"
+ },
+ {
+  "id": 10,
+  "name": "Mouse Inalámbrico Logitech M280",
+  "description": "Uso más cómodo para la mano derecha gracias a la forma contorneada con recubrimiento de goma blanda. Duración de las pilas hasta 18 meses, gracias al diseño para ahorrar energía.El M280 entra automáticamente en estado de suspensión cuando no se está usando.",
+  "price": 1200,
+  "discount": 10,
+  "image": "img-mouse-logitech.jpg",
+  "category": "visited"
  },
  {
   "id": 11,
@@ -133,50 +142,5 @@
   "category": "in-sale",
   "description": "Deja que la música dance cobre vida con EXTRA BASS™ Anima el ambiente con EXTRA BASS™1. Un radiador pasivo trabaja con el parlante monoaural para potenciar los tonos bajos y mejorar los graves, a pesar del tamaño compacto. ",
   "image": "img-parlante-sony.jpg"
- },
- {
-  "id": 17,
-  "name": "zapatillas",
-  "price": "11111111",
-  "discount": "20",
-  "category": "in-sale",
-  "description": "asdasdasdasd",
-  "image": "default-image.png"
- },
- {
-  "id": 18,
-  "image": "default-image.png",
-  "name": "zapatillas",
-  "price": "123",
-  "discount": "15",
-  "category": "in-sale",
-  "description": "asdasd"
- },
- {
-  "id": 19,
-  "image": "default-image.png",
-  "name": "zapatillas",
-  "price": "123",
-  "discount": "15",
-  "category": "in-sale",
-  "description": "asda"
- },
- {
-  "id": 20,
-  "image": "image-1665539108663.jpg",
-  "name": "zapatillas",
-  "price": "123",
-  "discount": "15",
-  "category": "in-sale",
-  "description": "asdasdasd"
- },
- {
-  "id": 21,
-  "image": "image-1665539160175.jpg",
-  "name": "zapatillas",
-  "price": "123",
-  "discount": "15",
-  "category": "in-sale",
-  "description": "asdasdasdasdasd"
  }
 ]
