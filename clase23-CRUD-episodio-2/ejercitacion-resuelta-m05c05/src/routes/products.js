@@ -6,6 +6,7 @@ const path = require('path')
 
 // ************ Controller Require ************
 const productsController = require('../controllers/productsController');
+const deRuta = require('../middleware/deRuta');
 
 // ************ Multer ************ 
 var storage = multer.diskStorage({
@@ -22,7 +23,9 @@ var upload = multer({storage: storage})
 router.get('/', productsController.index); 
 
 /*** CREATE ONE PRODUCT ***/ 
-router.get('/create', productsController.create); 
+router.get('/create',deRuta,productsController.create); 
+
+
 router.post('/', upload.any(), productsController.store); 
 
 
