@@ -5,7 +5,6 @@ const express = require('express');
 const logger = require('morgan');
 const path = require('path');
 const methodOverride =  require('method-override'); // Pasar poder usar los métodos PUT y DELETE
-const miMdDeAplicacion = require('./middleware/deAplicacion');
 
 // ************ express() - (don't touch) ************
 const app = express();
@@ -22,7 +21,10 @@ app.use(methodOverride('_method')); // Pasar poder pisar el method="POST" en el 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la carpeta de las Vistas
 
-app.use(miMdDeAplicacion)
+app.use( (req,res,next) => {
+  console.log('Hola soy un md de aplicacion');
+  next()
+})
   
 
 // ************ WRITE YOUR CODE FROM HERE ************
