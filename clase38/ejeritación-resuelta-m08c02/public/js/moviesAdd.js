@@ -92,5 +92,30 @@ window.onload = function () {
   //       };
         
       }
-      
-     
+    //   let inputTitulo = document.querySelector('#titulo');
+
+    // console.log(inputTitulo)
+
+    // let estadoSecreto = 0
+    // let secretWord = "palabrasecreta";
+    // let index = 0;
+
+    // inputTitulo.addEventListener('keypress', (e) => {
+
+    //     if (e.key == secretWord[index]) {
+    //         index += 1;
+    //         estadoSecreto += 1;
+
+    //     } else {
+    //         index = 0;
+    //         estadoSecreto = 0;
+
+    //     }
+
+    //     if (estadoSecreto == secretWord.length ) {
+    //         alert("SECRETO!")
+    //         index = 0;
+    //         estadoSecreto = 0
+    //     }
+    // })
+
